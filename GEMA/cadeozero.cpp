@@ -19,3 +19,25 @@ int main(){
     }
     cout << position[0]<< ' ' << position[1];
 }
+
+// More optimized solution:
+/* #include <iostream>
+using namespace std;
+
+int main(){
+    int n, m;
+    cin >> n >> m;
+
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            int x;
+            cin >> x;
+            if(x == 0){
+                cout << i << ' ' << j
+            }
+
+        }
+    }
+    
+}*/
+
