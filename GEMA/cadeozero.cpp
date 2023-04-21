@@ -11,7 +11,8 @@ int main(){
         for(int j = 0; j < m; j++){
             cin >> matriz[i][j];
             if(matriz[i][j] == 0){
-                cout << i << ' ' << j
+                position[0] = i;
+                position[1] = j;
             }
 
         }
