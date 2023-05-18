@@ -22,7 +22,6 @@ void dfs(int u) {
 
 int main()
 {   
-    bool ans = false;
     int n, m, A, B;
     cin >> n >> m >> A >> B;
     
@@ -31,11 +30,7 @@ int main()
         adj[a].push_back(b);
     }
     dfs(A);
-    for(int i = 0; i < adj[A].size(); i++){
-        if(adj[A][i] == B){
-            ans = true;
-        }
-    }
+    
     cout << (visited[B] ? "SIM" : "NAO") << endl;
     return 0;
 }
